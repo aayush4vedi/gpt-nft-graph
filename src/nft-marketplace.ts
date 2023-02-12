@@ -96,6 +96,7 @@ export function handleItemBought(event: ItemBoughtEvent): void {
     itemBought.buyer = event.params.buyer
     itemBought.nftAddress = event.params.nftAddress
     itemBought.tokenId = event.params.tokenId
+    itemBought.price = event.params.price
     activeItem!.buyer = event.params.buyer
 
     itemBought.blockNumber = event.params.blockNumber

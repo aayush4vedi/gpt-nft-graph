@@ -1,5 +1,5 @@
 type ActiveItem
-    @entity(immutable: true) { # custom event (not in contract)
+    @entity(immutable: false) { # custom event (not in contract)
     id: ID!
     buyer: Bytes! # address- 0x0000.. if no one has bought it yet
     seller: Bytes! # address
